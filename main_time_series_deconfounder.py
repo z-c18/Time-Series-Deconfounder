@@ -14,7 +14,7 @@ import logging
 
 import numpy as np
 
-from simulated_autoregressive import AutoregressiveSimulation
+from simulated_autoregressive_new import AutoregressiveSimulation
 from time_series_deconfounder import test_time_series_deconfounder
 
 

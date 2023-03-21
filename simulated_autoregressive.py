@@ -52,7 +52,7 @@ class AutoregressiveSimulation:
         coefficients = []
         for i in range(p):
             if (variables_coefficients):
-                diag_elements = [np.random.normal(1.0 - (i+1) * 0.2, 0.2) for _ in range(matrix_shape[0])]
+                diag_elements = [np.random.normal(1.0 - (i+1) * 1.0 / p, 1.0 / p) for _ in range(matrix_shape[0])]
                 timestep_coefficients = np.diag(diag_elements)
 
             elif (treatment_coefficients):
